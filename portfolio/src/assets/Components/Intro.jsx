@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll';
+import profile from '../Backgrounds/batman.jpg'
 
 const Intro = () => {
 
@@ -96,7 +97,11 @@ const Intro = () => {
 
         </div>
       </div>
-      <div className='profile'></div>
+      <div className='profile'>
+        <div className='profile-picture float'>
+          <img src={profile}alt=""  />
+          </div>
+          </div >
     </div>
   )
 }

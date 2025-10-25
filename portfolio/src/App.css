@@ -73,6 +73,45 @@ nav div:nth-child(2) a:hover {
   height: 100vh;
 }
 
+.profile {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  object-fit: contain;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .info {
   position: relative;
   width: 50%;
@@ -314,8 +353,8 @@ ul > li {
 /* Tech & Tools */
 
 .tech {
-  background-color:  rgb(17 24 39);
-  height: 100vh ;
+  background-color: rgb(17 24 39);
+  height: 100vh;
 }
 
 .box {
@@ -328,15 +367,14 @@ ul > li {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-    --tw-bg-opacity: 1;
+  --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity, 1));
   transition: 300ms;
 }
 
 .box:hover {
-  transform: scale(1.1,1.1);
-  box-shadow: 
-  0 4px 8px rgba(60, 102, 115, 0.5);
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 4px 8px rgba(60, 102, 115, 0.5);
 }
 
 .tech-title {
@@ -351,7 +389,6 @@ ul > li {
   color: transparent;
 }
 
-
 .tools {
   display: flex;
   flex-wrap: wrap;
@@ -360,8 +397,8 @@ ul > li {
 }
 
 .box img {
-width: 60px;
-object-fit: contain;
+  width: 60px;
+  object-fit: contain;
 }
 
 /* project-section */
@@ -383,9 +420,8 @@ object-fit: contain;
 }
 
 .project:hover {
-  box-shadow: 
-  0 4px 8px rgba(60, 102, 115, 0.5);
-  transform: scale(1.1,1.1);
+  box-shadow: 0 4px 8px rgba(60, 102, 115, 0.5);
+  transform: scale(1.1, 1.1);
 }
 
 .photo {
@@ -395,7 +431,7 @@ object-fit: contain;
   object-fit: contain;
 }
 
-.photo img{
+.photo img {
   width: 100%;
   height: 100%;
 }
@@ -456,7 +492,7 @@ object-fit: contain;
 
 .contact-info p {
   font-size: 1.1rem;
-  color:#8a93a4;
+  color: #8a93a4;
 }
 
 .details li {
@@ -472,12 +508,9 @@ object-fit: contain;
 }
 
 .send-message {
-  
   width: 45%;
   padding: 20px;
 }
-
-
 
 .form-container {
   max-width: 500px;
@@ -486,7 +519,7 @@ object-fit: contain;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 6px 12px rgba(173, 216, 230, 0.3),
-              0 8px 18px rgba(128, 128, 128, 0.2); /* light blue + gray shadow */
+    0 8px 18px rgba(128, 128, 128, 0.2); /* light blue + gray shadow */
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -548,8 +581,6 @@ object-fit: contain;
   transform: translateY(-2px);
 }
 
-
-
 footer {
   height: 100px;
   background-color: rgb(2 6 23);
@@ -559,7 +590,7 @@ footer {
   align-items: center;
 }
 
-.foot-title{
+.foot-title {
   margin: 0;
   font-size: 1.6rem;
   font-weight: 500;
@@ -567,4 +598,141 @@ footer {
   background-size: 200%;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    font-size: 13px;
+  }
+
+  nav div:nth-child(2) {
+    font-size: 13px;
+    padding: 4px;
+  }
+  .intro {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 16px;
+  }
+  .info {
+    order: 2;
+    width: 90%;
+  }
+
+  .info h1 {
+    font-size: 2rem;
+  }
+
+  .info p {
+    width: 85%;
+  }
+
+  .info h3 {
+    font-size: 1.3rem;
+  }
+
+  .buttons button {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding-left: 0;
+  }
+
+  .qes {
+    font-size: 1rem;
+  }
+  .ans {
+    font-size: 13px;
+  }
+  .profile {
+    margin-top: 35vw;
+    width: 100%;
+    order: 1;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .title {
+    font-size: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .information p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .CV {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .tech-title {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 90px;
+    text-align: center;
+  }
+
+  .tech {
+    height: 100%;
+  }
+  .box {
+    width: 110px;
+    height: 100px;
+  }
+  .box img {
+    width: 30px;
+  }
+
+  .box p {
+    font-size: 10px;
+  }
+
+  .project-list {
+    gap: 30px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    height: 350px;
+    width: 320px;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+  .contact-info {
+    width: 90%;
+  }
+
+  .send-message {
+    width: 80%;
+  }
+
+  .contact-form button {
+    font-size: 13px;
+    font-weight: 300;
+    width: 120px;
+  }
 }

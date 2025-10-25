@@ -15,7 +15,13 @@ const About = () => {
             <li><p className='qes'>Currently pursuing</p><p className='ans'> : MCA</p></li>
             <li><p className='qes'>Location</p><p className='ans'> : Karimnagar,Telangana</p></li>
         </ul>
-      <button className='CV'>Download CV</button>
+      <button className='CV'
+      onClick={()=> {
+        const link = document.createElement ('a');
+        link.href = "/resume.pdf";
+        link.download = "Anil_kumar_resume.pdf"
+        link.click ();
+      }}>Download CV</button>
     </section>
   )
 }

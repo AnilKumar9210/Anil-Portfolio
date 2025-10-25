@@ -1,4 +1,4 @@
-import { useRef, useContext } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-scroll";
 import "./App.css";
 import Intro from "./assets/Components/Intro";
@@ -6,15 +6,13 @@ import About from "./assets/Components/About";
 import Tech from "./assets/Components/Tech";
 import Projects from "./assets/Components/Projects";
 import Contact from "./assets/Components/Contact";
-import { MyContext } from "./assets/Context/Context";
 
 function App() {
-  
-  // const hireRef = useRef(null);
-  // const workRef = useRef(null);
+  const [item, setItem] = useState ('home')
 
-  // const { hireRef, workRef } = useContext(MyContext);
-
+  const handleLink = (section) => {
+    setItem (section)
+  }
   return (
     <>
       <nav>
@@ -22,43 +20,44 @@ function App() {
           <p>Portfolio</p>
         </div>
         <div>
-          <Link to="home" smooth={true} duration={600}>
+          <Link to="home" smooth={true} duration={600} onClick={()=> handleLink("home")}>
             <div className="link">
               <p>Home</p>
-              <div className="active"></div>
+              <div className={item==="home" ? "active" : ""}></div>
             </div>
           </Link>
-          <Link to="about" smooth={true} duration={600}>
+          <Link to="about" smooth={true} duration={600} onClick={()=> handleLink("about")}>
             <div className="link">
               <p>About</p>
-              <div className="active"></div>
+              <div className={item==="about" ? "active" : ""}></div>
             </div>
           </Link>
-          <Link to="skills" smooth={true} duration={600}>
+          <Link to="skill" smooth={true} duration={600} onClick={()=> handleLink("skills")}>
             <div className="link">
               <p>Skills</p>
-              <div className="active"></div>
+              <div className={item==="skills" ? "active" : ""}></div>
             </div>
           </Link>
-          <Link to="projects" smooth={true} duration={600}>
+          <Link to="projects" smooth={true} duration={600} onClick={()=>handleLink("projects")}>
             <div className="link">
               <p>Projects</p>
-              <div className="active"></div>
+              <div className={item==="projects" ? "active" : ""}></div>
             </div>
           </Link>
-          <Link to="contact" smooth={true} duration={600}>
+          <Link to="contact" smooth={true} duration={600} onClick={()=>handleLink("contact")}>
             <div className="link">
               <p>Contact</p>
-              <div className="active"></div>
+              <div className={item==="contact" ? "active" : ""}></div>
             </div>
           </Link>
         </div>
-      </nav>
+      </nav><>
       <Intro id="home" />
       <About id="about" />
-      <Tech id="skills" />
+      <Tech id="skill" />
       <Projects id="projects"  />
       <Contact id="contact" />
+      </>
     </>
   );
 }
