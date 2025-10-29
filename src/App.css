@@ -129,7 +129,7 @@ nav div:nth-child(2) a:hover {
   color: #5c6678;
 }
 
-.info h1 {
+.animation {
   font-size: 3rem;
   margin: 0;
   background: linear-gradient(90deg, #0ea5e9, #7e22ce, #0ea5e9);
@@ -612,7 +612,7 @@ footer {
 
   nav div:nth-child(2) {
     font-size: 13px;
-    padding: 4px;
+    /* padding: 4px; */
   }
   .intro {
     flex-direction: column;
@@ -638,7 +638,7 @@ footer {
   }
 
   .buttons button {
-    padding: 5px 10px;
+    padding: 7px 10px;
     font-size: 13px;
   }
 
@@ -652,7 +652,7 @@ footer {
     font-size: 1rem;
   }
   .ans {
-    font-size: 13px;
+    font-size: 16px;
   }
   .profile {
     margin-top: 35vw;
@@ -734,5 +734,13 @@ footer {
     font-size: 13px;
     font-weight: 300;
     width: 120px;
+  }
+
+  .link p {
+    font-size: 17px;
+  }
+
+  .active {
+    height: 0;
   }
 }

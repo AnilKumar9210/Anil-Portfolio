@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll';
 import profile from '../Backgrounds/batman.jpg'
+import { TypeAnimation } from 'react-type-animation';
 
 const Intro = () => {
 
@@ -15,7 +16,16 @@ const Intro = () => {
   return (
     <div className='intro'>
       <div className='info'>
-        <h1>Hi, I'm Anil kumar</h1>
+        <TypeAnimation
+        sequence={[
+          "Hi, I'm Anil Kumar",
+          1000
+        ]}
+        wrapper='h1'
+        className='animation'
+        speed={50}
+        repeat={Infinity}
+        />
         <h3>Front end developer</h3>
         <p>I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.</p>
 

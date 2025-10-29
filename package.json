@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage":"https://AnilKumar9210.github.io/Anil-Portfolio/",
+  "homepage": "https://AnilKumar9210.github.io/Anil-Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -17,7 +17,8 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.4",
-    "react-scroll": "^1.9.3"
+    "react-scroll": "^1.9.3",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
