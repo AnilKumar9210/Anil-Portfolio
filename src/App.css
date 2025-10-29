@@ -741,6 +741,6 @@ footer {
   }
 
   .active {
-    height: 0;
+    height: 1px;
   }
 }

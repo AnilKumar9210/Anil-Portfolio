@@ -9,7 +9,7 @@ const About = () => {
       </div>
         <ul>
             <li><p className='qes'>Name</p><p className='ans'> : Anil kumar Avula</p></li>
-            <li><p className='qes'>E-mail</p><p className='ans'> : anilkumarr9210@gmail.Components</p></li>
+            <li><p className='qes'>E-mail</p><p className='ans'> : anilkumarr9210@gmail.com</p></li>
             <li><p className='qes'>phone</p><p className='ans'> : 9898218789</p></li>
             <li><p className='qes'>Age</p><p className='ans'> : 22</p></li>
             <li><p className='qes'>Currently pursuing</p><p className='ans'> : MCA</p></li>
