@@ -49,7 +49,7 @@ const Contact = () => {
             </li>
             <li>
               <p>Phone</p>
-              <p> : +1234567890</p>
+              <p> :+91 9866470285</p>
             </li>
           </ul>
           <div className="connect">
