@@ -34,7 +34,7 @@ const About = () => {
   className="CV"
   onClick={() => {
     const link = document.createElement("a");
-    link.href = "Anil-Portfolio/resume.pdf";
+    link.href = "/resume.pdf";
     link.setAttribute("download", "Anil_Kumar_Resume.pdf");
     document.body.appendChild(link);
     link.click();
@@ -43,6 +43,7 @@ const About = () => {
 >
   Download CV
 </motion.button>
+
     </section>
   )
 }
