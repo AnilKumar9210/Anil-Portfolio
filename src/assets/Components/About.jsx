@@ -29,13 +29,20 @@ const About = () => {
             <motion.li variants={item}><p className='qes'>Currently pursuing</p><p className='ans'> : MCA</p></motion.li>
             <motion.li variants={item}><p className='qes'>Location</p><p className='ans'> : Karimnagar,Telangana</p></motion.li>
         </motion.ul>
-      <motion.button variants={item} className='CV'
-      onClick={()=> {
-        const link = document.createElement ('a');
-        link.href = "/resume.pdf";
-        link.download = "Anil_kumar_resume.pdf"
-        link.click ();
-      }}>Download CV</motion.button>
+      <motion.button
+  variants={item}
+  className="CV"
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = "Anil-Portfolio/resume.pdf";
+    link.setAttribute("download", "Anil_Kumar_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  Download CV
+</motion.button>
     </section>
   )
 }

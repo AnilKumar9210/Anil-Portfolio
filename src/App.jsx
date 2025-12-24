@@ -32,10 +32,10 @@ function App() {
               <div className={item==="about" ? "active" : ""}></div>
             </div>
           </Link>
-          <Link to="skill" smooth={true} duration={600} onClick={()=> handleLink("skills")}>
+          <Link to="skill" smooth={true} duration={600} onClick={()=> handleLink("skill")}>
             <div className="link">
               <p>Skills</p>
-              <div className={item==="skills" ? "active" : ""}></div>
+              <div className={item==="skill" ? "active" : ""}></div>
             </div>
           </Link>
           <Link to="projects" smooth={true} duration={600} onClick={()=>handleLink("projects")}>

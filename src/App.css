@@ -2,7 +2,7 @@ nav {
   background-color: rgb(2 6 23);
   color: white;
   display: flex;
-  gap: 70%;
+  gap: 69%;
   /* justify-content: space-between; */
 
   padding: 20px 0;
@@ -278,7 +278,7 @@ ul {
 .about {
   background-color: rgb(2 6 23);
   padding: 20px;
-  height: 100vh;
+  /* height: 100vh; */
   align-content: center;
   display: flex;
   flex-direction: column;
@@ -354,7 +354,9 @@ ul > li {
 
 .tech {
   background-color: rgb(17 24 39);
-  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /* height: 100vh; */
 }
 
 .box {
@@ -394,6 +396,7 @@ ul > li {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .box img {
@@ -453,6 +456,7 @@ ul > li {
   gap: 10px;
   margin: 10px;
   padding-left: 4px;
+  flex-wrap: wrap;
 }
 
 .project-info ul li {
@@ -475,7 +479,7 @@ ul > li {
 /* contact details  */
 
 .contact {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   background-color: rgb(17 24 39);
 }
@@ -677,7 +681,7 @@ footer {
   }
 
   .about {
-    height: 100%;
+    /* height: 100%; */
   }
 
   .CV {
@@ -693,7 +697,7 @@ footer {
   }
 
   .tech {
-    height: 100%;
+    /* height: 100%; */
   }
   .box {
     width: 110px;

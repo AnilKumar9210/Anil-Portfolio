@@ -26,7 +26,7 @@ const Intro = () => {
         speed={50}
         repeat={Infinity}
         />
-        <h3>Front end developer</h3>
+        <h3>Full Stack developer</h3>
         <p>I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.</p>
 
         <div className='buttons'>

@@ -10,6 +10,10 @@ import python from "../icons/py.png";
 import git from "../icons/social.png";
 import github from "../icons/github.png";
 import java from "../icons/java.png";
+import express from "../icons/Express.png";
+import mongodb from "../icons/MongoDB.png";
+import node from "../icons/Node.js.png";
+
 
 const tools = [
   { img: html, name: "HTML5" },
@@ -21,33 +25,36 @@ const tools = [
   { img: python, name: "Python" },
   { img: c, name: "C++" },
   { img: java, name: "Java" },
+  { img: node, name: "Node JS" },
+  { img: express, name: "Express JS" },
+  { img: mongodb, name: "MongoDB" },
 ];
 
 // Container animation (stagger children)
-const containerVariants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
+// const containerVariants = {
+//   hidden: {},
+//   visible: {
+//     transition: {
+//       staggerChildren: 0.15,
+//     },
+//   },
+// };
 
 // Box animation: alternate left/right
-const boxVariants = {
-  hidden: (i) => ({
-    opacity: 0,
-    x: i % 2 === 0 ? -80 : 80, // left for even, right for odd
-  }),
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut",
-    },
-  },
-};
+// const boxVariants = {
+//   hidden: (i) => ({
+//     opacity: 0,
+//     x: i % 2 === 0 ? -80 : 80, // left for even, right for odd
+//   }),
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       duration: 0.6,
+//       ease: "easeOut",
+//     },
+//   },
+// };
 
 const Tech = () => {
   return (
@@ -56,7 +63,7 @@ const Tech = () => {
 
       <motion.div
         className="tools"
-        variants={containerVariants}
+        // variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -65,7 +72,7 @@ const Tech = () => {
           <motion.div
             className="box"
             key={i}
-            variants={boxVariants}
+            // variants={boxVariants}
             custom={i}
             whileHover={{ scale: 1.08 }}
           >

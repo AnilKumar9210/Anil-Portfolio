@@ -3,8 +3,15 @@ import todo from './assets/Backgrounds/todo.jpg'
 import movie from './assets/Backgrounds/movie.jpg'
 import chat from './assets/Backgrounds/chat.jpg'
 import music from './assets/Backgrounds/music.jpg'
+import blog from './assets/Backgrounds/blog.jpg'
 
 const Backgrounds = [{
+    bg:blog,
+    title:'Bloging Platform',
+    link:'https://github.com/AnilKumar9210/blog',
+    desc:'A MERN stack blogging web application with authentication, rich text editor, draft support, and full CRUD functionality for posts.',
+    tech:['React JS', 'Css3', 'Node JS','Express Js', 'Mongo DB'],
+    },{
     bg:password,
     title:'Password Manager',
     link:'https://github.com/AnilKumar9210/Password-Manager',
